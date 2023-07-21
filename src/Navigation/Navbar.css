@@ -1,0 +1,38 @@
+.navbar {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    /* Adjust the values to your desired shadow effect */
+    font-weight: 550;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+
+
+
+
+
+.navbar-brand {
+    margin-left: 5rem;
+}
+
+.logo {
+    max-width: 10rem;
+    margin-right: 1rem;
+}
+
+.right-nav {
+    margin-left: auto;
+    margin-right: 5rem;
+}
+
+button {
+    font-weight: 550;
+
+}
+@media screen and (min-width: 768px) {
+    .subscribe{
+        margin-right: 1rem;
+    }
+}

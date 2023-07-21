@@ -1,0 +1,234 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.articles-title{
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 2rem;
+  margin-left: 6%;
+}
+
+.articles{
+  width: 90%;
+  border: none;
+  margin-left: 4%;
+
+}
+
+
+.beggining{
+  position: relative;
+}
+
+.beggining-text{
+  font-size: small !important;
+  color:  rgb(157, 175, 187);
+  text-align: left ;
+  font-weight: 400;
+    line-height: 2;
+    font-size: 12px !important;
+    max-width: 36%;
+    color:  rgb(157, 175, 187);
+    text-align: left ;
+    font-weight: 400;
+}
+
+.headpage{
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  width: 100%;
+}
+
+.text-title{
+  color:  rgba(222, 217, 217, 0.975);
+  text-align: left ;
+  font-weight: 700;
+  font-family: 'Newsreader', serif;
+  font-size: 40px;
+}
+
+
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-container > * {
+  flex: 0 0 27%;
+  margin: 1rem;
+}
+
+
+@media screen and (min-width: 767px) {
+  .articles{
+    width: 70%;
+    margin-left: 15%;
+  }
+  .articles-title{
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 2rem;
+    margin-left: 16%;
+
+  }
+
+
+
+
+}
+
+
+
+
+
+@media (max-width: 767px) {
+  .card-container > * {
+    flex: 0 0 100%;
+  }
+
+
+  .beggining{
+    font-size: small;
+  }
+  .beggining-text{
+    
+    font-size: 10px !important;
+    color:  rgb(157, 175, 187);
+    text-align: left ;
+    font-weight: 400;
+
+}
+.text-title{
+  font-size: 35px;
+
+}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+.circles{
+  display: flex;
+  justify-content: center;  
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+
+
+
+.circle-row {
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  width: 45%;
+
+  justify-content: space-between; /* Equal spacing between circles */
+}
+
+.highlights{
+  font-size: xx-large;
+  color: #2a4663;
+  margin-top: 50px;
+}
+
+.circle-container {
+  font-family: 'Vollkorn', serif; 
+/* font-family: 'Libre Baskerville', serif; */
+/* font-family: 'Newsreader', serif; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px; /* Initial circle size */
+  width: 140px; /* Initial circle size */
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: larger;
+  color: #fcffffc2;
+  background-color: #cddae8; /* A shade of blue for the circle background */
+  box-shadow: 0 0 5px 5px #ffffff; /* Soft border with a matching background color */
+  transition: all 0.3s ease; /* Transition for on-hover effect */
+}
+
+.circle {
+  text-align: center;
+  padding: 20px;
+}
+
+/* On-hover effect */
+.circle-container:hover {
+  color: #fcfffff0;
+
+  background-color: #528bc7; /* A darker shade of blue on hover */
+  box-shadow: 0 0 5px 5px #fcffff; /* Soft border with a matching hover background color */
+}
+
+/* Media queries for smaller and larger devices */
+@media screen and (max-width: 768px) {
+  
+
+.circles{
+  display:block;
+  justify-content: center;  
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+  .circle-row {
+    flex-wrap: wrap; /* Wrap the circles to new rows on smaller devices */
+    justify-content: center; /* Center the circles horizontally */
+    width: 100%;
+
+  }
+
+  .circle-container {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width to create equal spacing between circles */
+    margin: 25px; /* Smaller margin between circles for smaller devices */
+    height: 120px; /* Smaller circle size */
+    max-width: 120px !important; /* Smaller circle size */
+    font-size: medium; /* Smaller font size */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  
+  .text-title{
+    font-size: 50px;
+ 
+ 
+   }
+ 
+  .beggining-text{
+    line-height: 2.2;
+    font-size: 21px !important;
+    max-width: 33%;
+    color:  rgb(157, 175, 187);
+    text-align: left ;
+    font-weight: 400;
+  }
+  .circle-row{
+    margin-left: 6%;
+    margin-right: 6%;
+    width: 45%;
+
+  }
+  .circle-container {
+    height: 175px; /* Larger circle size for larger devices */
+    width: 175px; /* Larger circle size for larger devices */
+    font-size: larger; /* Larger font size for larger devices */
+  }
+}

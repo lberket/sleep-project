@@ -1,0 +1,52 @@
+#bold{
+    font-weight: bold;
+}
+
+.article-text{
+    margin-left: 8%;
+    margin-right: 8%;
+    align-self: flex-start;
+    text-align: left;
+    line-height: 1.7;
+
+}
+.title{
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: left;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+
+}
+.link{
+    color: rgb(146, 146, 146);
+    text-decoration: underline;
+}
+
+.link:hover{
+    color: rgb(38, 63, 63) !important;
+}
+
+.paragraph{
+    font-weight: 550;
+    color:black;
+    font-style: italic;
+}
+
+.paragraph:hover{
+    color: black !important;
+}
+
+@media screen and (min-width: 768px) {
+    .article-text{
+        margin-left: 33%;
+        margin-right: 33%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .title{
+        margin-left: 33%;
+        margin-right: 33%;
+    }
+
+}

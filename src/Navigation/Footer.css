@@ -1,0 +1,76 @@
+footer {
+    background-color: rgb(29, 29, 29);
+    color: #e9e9e9;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    font-size: large;
+    position: absolute;
+    width: 100%;
+
+}
+
+a {
+    color: #949aa1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000 !important;
+}
+
+.lll:hover{
+    color:#e9e9e9 !important
+}
+
+.row {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.text-bold {
+    font-weight: 550;
+}
+
+
+
+#logo1 {
+    align-self: flex-start;
+    max-width: 12rem !important
+}
+
+#about-us {
+    color: #dbdbdbdb;
+    font-size: 0.8rem;
+    margin-top: 0.6rem
+}
+
+@media screen and (min-width: 768px) {
+    #logo1 {
+        align-self: auto !important;
+        max-width: 16rem !important
+    }
+
+    #about-us {
+        color: #dbdbdbdb;
+        text-align: left;
+        font-size: 0.8rem;
+        margin-top: 0.6rem
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .fotcart {
+        align-self: center !important;
+    }
+
+    footer {
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+    }
+}
+
